@@ -1,0 +1,27 @@
+{
+  "name": "Dummy-Virtualization-Server",
+  "version": "1.0.0",
+  "description": "A dummy server for the service virtualization project",
+  "main": "src/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/shadidchowdhury/dummy-virtualization-server.git"
+  },
+  "keywords": [
+    "virtualization",
+    "dummy"
+  ],
+  "author": "Shadid Chowdhury",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/shadidchowdhury/dummy-virtualization-server/issues"
+  },
+  "homepage": "https://github.com/shadidchowdhury/dummy-virtualization-server#readme",
+  "dependencies": {
+    "body-parser": "^1.15.0",
+    "express": "^4.13.4"
+  }
+}
