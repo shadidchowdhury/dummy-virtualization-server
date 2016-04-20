@@ -7,6 +7,16 @@ var virtCollection = require('./src/virts')
 var virtualizations = new virtCollection();
 var app = express();
 app.use(bodyParser.json());
+
+// Enable CORS
+app.use(function(req, res, next) {
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+    res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE');
+    res.setHeader('Access-Control-Allow-Credentials', true);
+    next();
+});
+
 /**
  * HTTP GET /virtualizations
  * Returns: the list of tasks in JSON format
